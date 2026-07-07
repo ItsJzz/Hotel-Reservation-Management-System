@@ -1,0 +1,265 @@
+/* General styling for the 'Tag' */
+.Tag {
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    width: 400px;
+}
+
+/* Styling for the RoomTable and buttons */
+.RoomTable {
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+/* Styling for buttons inside the RoomTable */
+.RoomTable button {
+    border-radius: 48px;
+    padding: 12px 24px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #50505d;
+    background-color: transparent;
+    border: 1px solid #50505d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for RoomTable buttons */
+.RoomTable button:hover {
+    background-color: #8b7655;
+    color: white;
+}
+
+/* Styling for the RoomTable td (cells) */
+.RoomTable td {
+    padding-left: 20px;
+}
+
+/* Styling for the ImageTable and image alignment */
+.ImageTable {
+    position: relative;
+    left: 50px;
+}
+
+/* Styling for images inside ImageTable */
+.ImageTable img {
+    height: 300px;
+    width: 390px;
+}
+
+/* Styling for ImageTable td (cells) */
+.ImageTable td {
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+/* Styling for Room names inside ImageTable */
+.RoomName {
+    padding-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Description styling */
+.Description {
+    margin-top: 0%;
+    width: 390;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Styling for the 'Book Now' button */
+.book-now {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for 'Book Now' button */
+.book-now:hover {
+    background-color: #705e41;
+}
+
+/* Styling for the Disabled Button */
+button[disabled] {
+    background-color: #ccc;
+    color: #999;
+    border: 1px solid #ddd;
+    cursor: not-allowed;
+}
+
+/* Styling for the 'Book Now' button for Luxury Stay */
+.book-now-luxury {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the 'Book Now' button for Luxury Stay */
+.book-now-luxury:hover {
+    background-color: #705e41;
+}
+
+/* Styling for the Category section */
+.categories {
+    position: sticky;
+    top: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 15%;
+}
+
+/* Styling for the Products section */
+.products-container {
+    width: 83%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Individual product item styling */
+.products-container > div {
+    margin: 2% 3% 2% 3.1%;
+    display: inline-block;
+    border: 1px solid black;
+    flex-basis: 27%;
+    height: 700px;
+    position: relative;
+}
+
+/* Picture container */
+.picture-container {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+}
+
+/* Description container */
+.description-container {
+    position: absolute;
+    top: 70%;
+    height: 30%;
+    width: 100%;
+}
+
+/* Product name styling */
+#name_txt {
+    display: inline-block;
+}
+
+/* Price styling without spin buttons */
+#price_txt::-webkit-outer-spin-button,
+#price_txt::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Styling for 'Book Now' button (reuse for product container too) */
+.book-now {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for 'Book Now' button in product container */
+.book-now:hover {
+    background-color: #705e41;
+}
+.book-now-unique {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-unique:hover {
+    background-color: #705e41;
+}
+.book-now-premium {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-premium:hover {
+    background-color: #705e41;
+}
+.book-now-business {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the 'Book Now' button */
+.book-now-business:hover {
+    background-color: #705e41;
+}
+.btnText {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: transparent;  /* Transparent background for disabled look */
+    border: 1px solid #ccc;         /* Light gray border */
+    color: #ccc;                    /* Grayed-out text */
+    pointer-events: none;           /* Prevent interaction */
+    cursor: not-allowed;            /* Shows the 'not allowed' cursor */
+}

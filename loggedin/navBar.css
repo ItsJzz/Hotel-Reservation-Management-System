@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #232323;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center; /* center all items */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* NAV LINKS */
+.nav_links1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links1 li a {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color: #fffaeb;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav_links1 li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #bc6e19;
+    transition: width 0.3s ease;
+}
+
+.nav_links1 li a:hover::after {
+    width: 100%;
+}
+
+.nav_links1 li a:hover {
+    color: #bc6e19;
+}
+
+/* NAV BUTTON */
+.navbar button {
+    padding: 10px 20px;
+    background-color: #232323;
+    color: #232323;
+    border: 2px solid #232323;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    right: 0px;
+}
+
+.navbar button:hover {
+    background-color: #cec8c3;
+    color: #fffaeb;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fffaeb;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .nav_links1 {
+        flex-direction: column;
+        width: 100%;
+        background-color: #232323;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav_links1.active {
+        max-height: 500px;
+        padding: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

@@ -1,0 +1,186 @@
+/* Sticky categories section */
+.categories {
+    position: sticky;
+    width: 15%;
+    height: auto;
+    border: 1px solid black;
+    display: inline-flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Products container layout */
+.products-container {
+    width: 83%;
+    height: auto;
+    border: 1px solid black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Each product item within the products container */
+.products-container > div {
+    margin: 2% 3% 2% 3.1%;
+    display: inline-block;
+    border: 1px solid black;
+    flex-basis: 27%;
+    height: 700px;
+    position: relative;
+}
+
+/* Product image container */
+.picture-container {
+    position: absolute;
+    border: 1px solid black;
+    height: 70%;
+    width: 100%;
+}
+
+/* Input area for pictures */
+#picture_input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Description container */
+.description-container {
+    position: absolute;
+    border: 1px solid black;
+    height: 30%;
+    top: 70%;
+    width: 100%;
+}
+
+/* Product name styling */
+#name_txt {
+    display: inline-block;
+}
+
+/* Price styling without spin buttons */
+#price_txt::-webkit-outer-spin-button,
+#price_txt::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Main title */
+.Tag {
+    position: relative;
+    top: 30px;
+    left: 40px;
+    font-size: 40px;
+    width: 400px
+}
+
+/* Room table for the buttons */
+.RoomTable {
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.RoomTable button {
+    border-radius: 48px;
+    padding: 12px 24px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #50505d;
+    background-color: transparent; 
+    border: 1px solid #50505d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.RoomTable button:hover {
+    background-color: #8b7655;
+    color: white;
+}
+
+/* Styling for the table cells in RoomTable */
+.RoomTable td {
+    padding-left: 40px;
+}
+
+/* Image table styling */
+.ImageTable {
+    position: relative;
+    left: 50px;
+}
+
+.ImageTable img {
+    height: 300px;
+    width: 390px;
+}
+
+/* Styling for the image table cells */
+.ImageTable td {
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+/* Room name styling */
+.RoomName {
+    padding-top: 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Disabled button text (btnText) */
+.btnText {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: transparent;  /* Transparent background for disabled look */
+    border: 1px solid #ccc;         /* Light gray border */
+    color: #ccc;                    /* Grayed-out text */
+    pointer-events: none;           /* Prevent interaction */
+    cursor: not-allowed;            /* Shows the 'not allowed' cursor */
+}
+
+/* Layout changes for categories and product sections to ensure proper alignment */
+.categories > div {
+    margin: 10.6%;
+    display: block;
+    border: 1px solid black;
+    flex-basis: 20%;
+    height: 600px;
+}
+
+/* Flexbox to align content inside category */
+.categories {
+    display: inline-flex;
+    top: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* Style for the 'Book Now' button */
+.book-now {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #8b7655;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for 'Book Now' button */
+.book-now:hover {
+    background-color: #705e41;
+}

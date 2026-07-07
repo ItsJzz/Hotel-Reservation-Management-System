@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #232323;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height:100px;
+    max-height: unset;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    transition: all .3s ease ;
+    transition: opacity 0.6s ease, transform 0.3s ease; 
+   
+}
+
+.logo h1 {
+    color: #fffaeb; 
+    transition: all .3s ease;  
+}
+.logo h1:hover{
+    transition: all .3s ease ;
+    color: #333;
+}
+.logo:hover img {
+    content: url('./pictures/logosss.png'); 
+    opacity: 0.8; 
+    transform: scale(1.05); 
+    width: 98px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_links li {
+    position: relative;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;    font-weight: 100; /* Ultra-light weight */
+
+    color: #fffaeb; /* Soft, warm tone */
+    font-weight: 100; /* Ultra-light weight for barely visible feel */
+    font-size: 14px; /* You can adjust the size for better visibility */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Wide letter spacing for an airy, elegant look */
+    padding-bottom: 3px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+
+.nav_links li a:hover,
+.nav_links li a:focus {
+    color: #bc6e19;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+/* Underline effect */
+.nav_links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bc6e19;
+    transition: width 0.3s ease;
+    
+}
+
+.nav_links li a:hover::after {
+    width: 100%; /* Expands underline on hover */
+    
+}
+.nav_links1 a{
+    display: inline !important;
+}
+
+/* Button Styles */
+header > button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ebc8c8;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; 
+    transition: all 0.3s ease;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;    font-weight: 100;
+}
+
+header > button .user-icon {
+    width: 20px; /* Set the icon size */
+    height: 20px;
+    background-color: #cec8c3;  
+}
+
+header > button:hover {
+    background-color: #cec8c3;
+    color: #fffaeb;
+
+
+}
+
+
+/* MEDIA QUERIES HEHEHE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10%;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_links li a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    header > button {
+        margin-top: 20px;
+        display: inline;
+        padding-left: 220px;
+    }
+}
