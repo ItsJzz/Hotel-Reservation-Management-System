@@ -210,7 +210,7 @@ body{
 
 }
 .Headings{
-    margin-top:0;
+    margin-top:5%;
     margin:5%;
 }
 .headingtag{
@@ -219,6 +219,7 @@ body{
     text-align: center;
     font-size: 40px;
     letter-spacing: 0.2rem;
+    margin-top: 150px;
 }
 .headingtags {
     margin-top:10px;
@@ -312,60 +313,15 @@ multi-pictures > img{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-/* Parallax Section Base */
-#parallax-2 {
-    background: url(./pictures/parallax2.png);
-    background-size: cover;
+#parallax-2{
+    background: url(../pictures/parallax2.png);
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 700px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
-/* Centered Floating Box */
-.parallax-float-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
-    color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 600px;
-    width: 90%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    z-index: 2;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Paragraph inside the floating box */
-.parallax-float-box p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* CTA Button */
-.parallax-float-box a.button {
-    display: inline-block;
-    background-color: white;
-    color: #232323;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.parallax-float-box a.button:hover {
-    background-color: #a25d15;
-}
-
 #parallax-3{
-    background: url(./pictures/parallax3.jpg);
+    background: url(../pictures/parallax3.jpg);
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
@@ -398,13 +354,71 @@ multi-pictures > img{
     color:#555;
     text-align: justify;
     line-height:30px;
-    margin: 0 120px 120px 120px;
+    margin: 0 600px 40px 600px;
     text-align: center;
     font-family: 'Didot', serif; /* Ensure correct font name */
     font-style: italic; /* Apply italic style */
 }
 
-
+.nav_links1{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 0;
+    margin: 0;
+}
+.nav_links1 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20%; /* Adjust as needed */
+    background-color: #232323;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-height: 150px;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Align it to the top of the screen */
+    left: 0; /* Ensure it's aligned to the left of the screen */
+    width: 100%; /* Ensure it spans the full width of the page */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+.nav_links1 a{
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;    font-weight: 100; /* Ultra-light weight */
+    color: #fffaeb; /* Soft, warm tone */
+    font-weight: 100; /* Ultra-light weight for barely visible feel */
+    font-size: 14px; /* You can adjust the size for better visibility */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Wide letter spacing for an airy, elegant look */
+    padding-bottom: 3px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+.nav_links1 li a:hover,
+.nav_links1 li a:focus {
+    color: #bc6e19;
+    letter-spacing: 2px;
+    color: #333;
+}
+.nav_links1 li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bc6e19;
+    transition: width 0.3s ease;   
+}
+.nav_links1 li a:hover::after {
+    width: 100%; /* Expands underline on hover */
+    
+}
+.nav_links1 a{
+    text-decoration:none;
+    color: white;
+}
 .container.swiper {
     width: 100%;
     max-width: 1200px; /* Matches expected width for 3 slides */
@@ -488,8 +502,35 @@ table td{
 
 
 
+/*header  button css*/
+.nav_links1 button{
+    padding: 10px 25px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ebc8c8;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; 
+    transition: all 0.3s ease;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;    font-weight: 100;
+}
 
-
+.nav_links1 button:hover {
+    background-color: #cec8c3;
+    color: #fffaeb;
+    
+}
+.AboutUs{
+    padding-bottom: 40px;
+    letter-spacing:3px;
+    text-align:justify;
+    
+}
 
 #AboutTag{
     padding-top: 120px;
@@ -633,42 +674,3 @@ table td{
     }
 }
 
-.AboutUs {
-    max-width: 900px;
-    width: 90%;
-    margin: 100px auto 40px auto; /* Top, auto left/right, bottom */
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    text-align: justify;
-    overflow: hidden;
-    position: relative; /* Ensure it respects normal flow */
-    clear: both;        /* Ensure it doesn't float beside other elements */
-    z-index: 1;
-}
-.OurService {
-    max-width: 900px;
-    width: 90%;
-    margin: 100px auto 40px auto; /* Top, auto left/right, bottom */
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-    text-align: justify;
-    overflow: hidden;
-    position: relative; /* Ensure it respects normal flow */
-    clear: both;        /* Ensure it doesn't float beside other elements */
-    z-index: 1;
-}
-#parallax-2 p{
-    color: white;
-}

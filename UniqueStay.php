@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("navigationBar.php");
     include("databaseConnection.php");
 ?>
@@ -15,7 +16,7 @@
     <h2 class="Tag">All Hotel</h2>
     <table class="RoomTable">
         <tr>
-            <td><button onclick="window.location.href='productsTry.php'" >All</button></td>
+            <td><button onclick="window.location.href='products.php'" >All</button></td>
             <td><button onclick="window.location.href='LuxuryHotel.php'">Luxury Stay</button></td>
             <td><button onclick="window.location.href='UniqueStay.php'"style="background-color:#8b7655; color:white;">Unique Stay</button></td>
             <td><button onclick="window.location.href='PremiumStay.php'">Premium Stay</button></td>
@@ -36,7 +37,7 @@
                 }
 
                 echo "<td class='RoomCell'>";
-                echo "<img src='" . htmlspecialchars($row['image_path']) . "' alt='" . htmlspecialchars($row['name']) . "'>";
+                echo "<img src='../" . htmlspecialchars($row['image_path']) . "' alt='" . htmlspecialchars($row['name']) . "'>";
                 echo "<div class='RoomName'>" . htmlspecialchars($row['name']) . "</div>";
                 echo "<p>" . htmlspecialchars($row['description']) . "</p>";
                 echo "<div class='btnText'>" . htmlspecialchars($row['category']) . "</div>";

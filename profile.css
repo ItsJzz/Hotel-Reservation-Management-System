@@ -1,0 +1,237 @@
+/* Reset and font setup */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sidebar Navigation */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15%;
+    background-color: #232323;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10; /* Make sure sidebar doesn't overlap */
+}
+
+.navigation a {
+    color: #fffaeb;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    transition: background 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #bc6e19;
+    color: #fff;
+}
+
+/* Main Content Area */
+.contents {
+    margin-left: 15%;
+    padding: 40px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    position: relative;
+    z-index: 5; /* Ensure content appears above background */
+}
+
+/* Account Settings Container */
+.account-settings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile Container Box */
+.profile-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Info and Image Container */
+.image-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+.upload-image {
+    margin-top: 15px;
+    padding: 5px 12px;
+    background-color: #232323;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-image:hover {
+    background-color: #bc6e19;
+}
+
+/* Info Form */
+.info {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.info input[type="text"],
+.info input[type="email"],
+.info input[type="password"] {
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Buttons */
+.edit-button,
+.save-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button:hover,
+.save-button:hover {
+    background-color: #bc6e19;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        position: relative;
+    }
+
+    .contents {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .profile-container {
+        padding: 20px;
+    }
+
+    .image-container {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+.navigation {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    border: 1px solid black;
+    padding-top: 20px; /* Add some padding to move it down a little */
+}
+
+.logo {
+    width: 100%; /* Ensure it spans across the entire sidebar */
+    text-align: center; /* Center the logo */
+    margin-bottom: 30px; /* Add some space below the logo */
+}
+
+.logo img {
+    width: 90%; /* Increase from 80% to 90% to make it bigger */
+    height: 130%; /* Maintain the aspect ratio */
+}
+.back-button {
+    margin-top: auto; /* Pushes the button to the bottom */
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 80%;
+    transition: background-color 0.3s ease;
+    
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+
+.back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* FullCalendar Styles */
+#calendar-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    min-height: 500px; /* Ensure there's enough space for the calendar */
+    z-index: 1000; /* Ensure the calendar is visible above other elements */
+    padding: 10px; /* Add some padding for better spacing */
+}

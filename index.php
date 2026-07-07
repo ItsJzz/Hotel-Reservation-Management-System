@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href = "./index1.css">
+    <link rel="stylesheet" href = "./index2.css">
     <script>
         function goToSignin(){
             window.location.href ="./login.php";
@@ -68,7 +68,7 @@
                 <section id="parallax-2" class="snap-section">
                     <div class="parallax-float-box">
                         <p>Discover comfort and luxury in our rooms. Click below to find your ideal escape!</p>
-                        <a href="#" class="button">Go to Our Room</a>
+                        <a href="products.php" class="button">Go to Our Room</a>
                     </div>
                 </section>
 
@@ -79,28 +79,28 @@
             <div class="slide-wrapper">
                 <div class="card-list swiper-wrapper">
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/parallax2.png" alt="" class="user-image">
+                        <img src="../pictures/parallax2.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
                         <img src="../pictures/parallax1.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/parallax3.jpg" alt="" class="user-image">
+                        <img src="../pictures/parallax3.jpg" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/piclumen-1732738173153.png" alt="" class="user-image">
+                        <img src="../pictures/piclumen-1732738173153.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/piclumen-1732728266574.png" alt="" class="user-image">
+                        <img src="../pictures/piclumen-1732728266574.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/piclumen-1732731915834.png" alt="" class="user-image">
+                        <img src="../pictures/piclumen-1732731915834.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/piclumen-1732738173153.png" alt="" class="user-image">
+                        <img src="../pictures/piclumen-1732738173153.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/piclumen-1732728266574.png" alt="" class="user-image">
+                        <img src="../pictures/piclumen-1732728266574.png" alt="" class="user-image">
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -155,4 +155,4 @@
     </div>
 </div>
 </body>
-</html>
+</html>     

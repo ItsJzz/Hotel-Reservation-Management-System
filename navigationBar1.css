@@ -21,8 +21,7 @@ header {
     padding: 20px 5%;
     background-color: #232323;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    height:100px;
-    max-height: unset;
+    max-height: 150px;
 }
 
 .logo {
@@ -49,10 +48,9 @@ header {
     color: #333;
 }
 .logo:hover img {
-    content: url('./pictures/logosss.png'); 
+    content: url('../pictures/logosss.png'); 
     opacity: 0.8; 
     transform: scale(1.05); 
-    width: 98px;
 }
 
 nav {
@@ -120,12 +118,12 @@ nav {
 
 /* Button Styles */
 header > button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     background-color: #000000;
     color: #ffffff;
     border: 2px solid #ebc8c8;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     display: flex;
@@ -177,4 +175,31 @@ header > button:hover {
         display: inline;
         padding-left: 220px;
     }
+}
+/* User greeting button style (matches existing layout) */
+.greeting-button {
+    padding: 10px 20px;
+    background-color: #232323;
+    color: #fffaeb;
+    border: 1px solid #666;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.greeting-button:hover {
+    background-color: #bc6e19;
+    color: white;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* circular profile image */
+    object-fit: cover;
 }
