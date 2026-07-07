@@ -15,7 +15,7 @@
             <li><a href="#GalleryTag">Gallery</a></li>
             <li><a href="#thingsToDoTag">See & Do</a></li>
             <li><a href="#contact-info">Contact</a></li>
-            <li><button onclick="window.location.href='login.php'">Join Us</button></li>
+            <li><button onclick="window.location.href='home.php'">Admin</button></li>
         </ul>
     </div>
 </header>

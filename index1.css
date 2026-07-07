@@ -306,7 +306,7 @@ multi-pictures > img{
 }
 
 #parallax-1{
-    background: url(./pictures/parallax1.png);
+    background: url(../pictures/parallax1.png);
     background-size:contain;
     background-position: center;
     background-attachment: fixed;

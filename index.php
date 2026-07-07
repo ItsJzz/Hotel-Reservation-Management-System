@@ -68,7 +68,7 @@
                 <section id="parallax-2" class="snap-section">
                     <div class="parallax-float-box">
                         <p>Discover comfort and luxury in our rooms. Click below to find your ideal escape!</p>
-                        <a href="productsTry.php" class="button">Go to Our Room</a>
+                        <a href="#" class="button">Go to Our Room</a>
                     </div>
                 </section>
 
@@ -82,7 +82,7 @@
                         <img src="./pictures/parallax2.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
-                        <img src="./pictures/parallax1.png" alt="" class="user-image">
+                        <img src="../pictures/parallax1.png" alt="" class="user-image">
                     </div>
                     <div class="card-item swiper-slide">
                         <img src="./pictures/parallax3.jpg" alt="" class="user-image">
