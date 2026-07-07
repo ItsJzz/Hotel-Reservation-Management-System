@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost/finalProject/loggedin/downpayment.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Downpayment</title>
+    <link rel="stylesheet" href="./m,q32_files/all.min.css">
+    <style>
+        body {
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,0.8911939775910365) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            display: flex;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 800px;
+            max-width: 90%;
+        }
+        .left-image {
+            flex: 1;
+            background: url('../pictures/hotels.jpg') center/cover no-repeat;
+            min-height: 450px;
+        }
+        .form-container {
+            flex: 2;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .form-container h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: #333;
+        }
+        .form-container p {
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        input[readonly] {
+            background: #f1f1f1;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 14px 0;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .back-btn {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script>
+        function showPaymentNumberField() {
+            var method = document.getElementById('paymentMethod').value;
+            var paymentNumberDiv = document.getElementById('paymentNumberDiv');
+            if (method) {
+                paymentNumberDiv.style.display = 'block';
+            } else {
+                paymentNumberDiv.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-image"></div>
+
+    <div class="form-container">
+        <h1>Downpayment</h1>
+        <p>Choose your payment method and input your number</p>
+
+        <form action="http://localhost/finalProject/loggedin/process_downpayment.php" method="POST">
+            <select id="paymentMethod" name="paymentMethod" onchange="showPaymentNumberField()" required="">
+                <option value="" disabled="" selected="">Select Payment Method</option>
+                <option value="Gcash">Gcash</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+            </select>
+
+            <div id="paymentNumberDiv" style="display: block;">
+                <input type="text" name="paymentNumber" placeholder="Enter Payment Number" required="">
+            </div>
+
+            <input type="text" name="amount" value="500" readonly="">
+
+            <input type="submit" value="Proceed to Pay">
+        </form>
+
+        <a href="http://localhost/finalProject/loggedin/products.php" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Rooms
+        </a>
+    </div>
+</div>
+
+
+
+</body></html>
